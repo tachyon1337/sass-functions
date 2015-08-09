@@ -1,0 +1,327 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sass-functions - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Sass-functions - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Sass Utility Functions</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Sass-functions - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="first" data-type="function"><a href="#function-first">first</a></li><li class="sidebar__item sassdoc__item" data-name="last" data-type="function"><a href="#function-last">last</a></li><li class="sidebar__item sassdoc__item" data-name="last-index" data-type="function"><a href="#function-last-index">last-index</a></li><li class="sidebar__item sassdoc__item" data-name="prepend" data-type="function"><a href="#function-prepend">prepend</a></li><li class="sidebar__item sassdoc__item" data-name="insert-nth" data-type="function"><a href="#function-insert-nth">insert-nth</a></li><li class="sidebar__item sassdoc__item" data-name="replace" data-type="function"><a href="#function-replace">replace</a></li><li class="sidebar__item sassdoc__item" data-name="replace-nth" data-type="function"><a href="#function-replace-nth">replace-nth</a></li><li class="sidebar__item sassdoc__item" data-name="remove" data-type="function"><a href="#function-remove">remove</a></li><li class="sidebar__item sassdoc__item" data-name="remove-nth" data-type="function"><a href="#function-remove-nth">remove-nth</a></li><li class="sidebar__item sassdoc__item" data-name="slice" data-type="function"><a href="#function-slice">slice</a></li><li class="sidebar__item sassdoc__item" data-name="reverse" data-type="function"><a href="#function-reverse">reverse</a></li><li class="sidebar__item sassdoc__item" data-name="to-string" data-type="function"><a href="#function-to-string">to-string</a></li><li class="sidebar__item sassdoc__item" data-name="list-has-number" data-type="function"><a href="#function-list-has-number">list-has-number</a></li><li class="sidebar__item sassdoc__item" data-name="map-nested-get" data-type="function"><a href="#function-map-nested-get">map-nested-get</a></li><li class="sidebar__item sassdoc__item" data-name="map-deep-get" data-type="function"><a href="#function-map-deep-get">map-deep-get</a></li><li class="sidebar__item sassdoc__item" data-name="map-get-default" data-type="function"><a href="#function-map-get-default">map-get-default</a></li><li class="sidebar__item sassdoc__item" data-name="map-nested-get-default" data-type="function"><a href="#function-map-nested-get-default">map-nested-get-default</a></li><li class="sidebar__item sassdoc__item" data-name="map-deep-get-default" data-type="function"><a href="#function-map-deep-get-default">map-deep-get-default</a></li><li class="sidebar__item sassdoc__item" data-name="extend" data-type="function"><a href="#function-extend">extend</a></li><li class="sidebar__item sassdoc__item" data-name="map-deep-set" data-type="function"><a href="#function-map-deep-set">map-deep-set</a></li><li class="sidebar__item sassdoc__item" data-name="map-depth" data-type="function"><a href="#function-map-depth">map-depth</a></li><li class="sidebar__item sassdoc__item" data-name="map-has-keys" data-type="function"><a href="#function-map-has-keys">map-has-keys</a></li><li class="sidebar__item sassdoc__item" data-name="map-has-nested-keys" data-type="function"><a href="#function-map-has-nested-keys">map-has-nested-keys</a></li><li class="sidebar__item sassdoc__item" data-name="map-zip" data-type="function"><a href="#function-map-zip">map-zip</a></li><li class="sidebar__item sassdoc__item" data-name="map-extend" data-type="function"><a href="#function-map-extend">map-extend</a></li><li class="sidebar__item sassdoc__item" data-name="columns-to-percentage" data-type="function"><a href="#function-columns-to-percentage">columns-to-percentage</a></li><li class="sidebar__item sassdoc__item" data-name="convert-to-decimal" data-type="function"><a href="#function-convert-to-decimal">convert-to-decimal</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="function-first"><h3 class="item__heading"><a class="item__name" href="#function-first">first</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function first($list) { 
+  @return nth($list, 1);
+ }" data-collapsed="@function first($list) { ... }"><code>@function first($list) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$first: first((1,2,3,4))</code></pre></div></section><section class="main__item container item" id="function-last"><h3 class="item__heading"><a class="item__name" href="#function-last">last</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function last($list) { 
+  @return nth($list, length($list));
+ }" data-collapsed="@function last($list) { ... }"><code>@function last($list) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$last: last((1,2,3,4))</code></pre></div></section><section class="main__item container item" id="function-last-index"><h3 class="item__heading"><a class="item__name" href="#function-last-index">last-index</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function last-index($list) { 
+  @for $i from length($list)*-1 through -1 {
+    @if nth($list, abs($i)) == $value {
+      @return abs($i);
+    }
+  }
+
+  @return null;
+ }" data-collapsed="@function last-index($list) { ... }"><code>@function last-index($list) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>index of last occurrence of value</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code></div></section><section class="main__item container item" id="function-prepend"><h3 class="item__heading"><a class="item__name" href="#function-prepend">prepend</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function prepend($list, $value) { 
+  @return join($value, $list);
+ }" data-collapsed="@function prepend($list, $value) { ... }"><code>@function prepend($list, $value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>prepend a value to a list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-insert-nth"><h3 class="item__heading"><a class="item__name" href="#function-insert-nth">insert-nth</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function insert-nth($list, $index, $value) { 
+  $result: null;
+
+  @if type-of($index) != number {
+    @warn &quot;$index: #{quote($index)} is not a number for `insert-nth`.&quot;;
+  } @else if $index &lt; 1 {
+    @warn &quot;List index 0 must be a non-zero integer for `insert-nth`&quot;;
+  } @else if $index &gt; length($list) {
+    @warn &quot;List index is #{$index} but list is only #{length($list)} item long for `insert-nth&#39;.&quot;;
+  } @else {
+    $result: ();
+
+    @for $i from 1 through length($list) {
+      @if $i == $index {
+        $result: append($result, $value);
+      }
+
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function insert-nth($list, $index, $value) { ... }"><code>@function insert-nth($list, $index, $value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>insert value to a list at nth position</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$index</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-replace"><h3 class="item__heading"><a class="item__name" href="#function-replace">replace</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function replace($list, $old-value, $new-value, $recursive) { 
+  $result: ();
+
+  @for $i from 1 through length($list) {
+    @if type-of(nth($list, $i)) == list and $recursive {
+      $result: append($result, replace(nth($list, $i), $old-value, $new-value, $recursive));
+    } @else {
+      @if nth($list, $i) == $old-value {
+        $result: append($result, $new-value);
+      } @else {
+        $result: append($result, nth($list, $i));
+      }
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function replace($list, $old-value, $new-value, $recursive) { ... }"><code>@function replace($list, $old-value, $new-value, $recursive) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>replaces a value in a list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$old-value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$new-value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$recursive</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-replace-nth"><h3 class="item__heading"><a class="item__name" href="#function-replace-nth">replace-nth</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function replace-nth($list, $index, $value) { 
+  $result: null;
+
+  @if type-of($index) != number {
+    @warn &quot;$index: #{quote($index)} is not a number for `replace-nth`.&quot;;
+  } @else if $index == 0 {
+    @warn &quot;List index 0 must be a non-zero integer for `replace-nth`.&quot;;
+  } @else if abs($index) &gt; length($list) {
+    @warn &quot;List index is #{$index} but list is only #{length($list)} item long for `replace-nth`.&quot;;
+  } @else {
+    $result: ();
+    $index: if($index &lt; 0, length($list) + $index + 1, $index);
+
+    @for $i from 1 through length($list) {
+      @if $i == $index {
+        $result: append($result, $value);
+      } @else {
+        $result: append($result, nth($list, $i));
+      }
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function replace-nth($list, $index, $value) { ... }"><code>@function replace-nth($list, $index, $value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>replace a value at index</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$index</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-remove"><h3 class="item__heading"><a class="item__name" href="#function-remove">remove</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function remove($list, $value, $recursive) { 
+  $result: ();
+
+  @for $i from 1 through length($list) {
+    @if type-of(nth($list, $i)) == list and $recursive {
+      $result: append($result, remove(nth($list, $i), $value, $recursive));
+    } @else if nth($list, $i) != $value {
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function remove($list, $value, $recursive) { ... }"><code>@function remove($list, $value, $recursive) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>remove value from a list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$recursive</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-remove-nth"><h3 class="item__heading"><a class="item__name" href="#function-remove-nth">remove-nth</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function remove-nth($list, $index) { 
+  $result: null;
+
+  @if type-of($index) != number {
+    @warn &quot;$index: #{quote($index)} is not a number for `remove-nth`.&quot;;
+  } @else if $index == 0 {
+    @warn &quot;List index 0 must be a non-zero integer for `remove-nth`.&quot;;
+  } @else if abs($index) &gt; length($list) {
+    @warn &quot;List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.&quot;;
+  } @else {
+    $result: ();
+    $index: if($index &lt; 0, length($list) + $index + 1, $index);
+
+    @for $i from 1 through length($list) {
+      @if $i != $index {
+        $result: append($result, nth($list, $i));
+      }
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function remove-nth($list, $index) { ... }"><code>@function remove-nth($list, $index) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>remove value at index</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$index</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-slice"><h3 class="item__heading"><a class="item__name" href="#function-slice">slice</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function slice($list, $glue, $is-nested) { 
+  $result: null;
+
+  @if type-of($start) != number or type-of($end) != number {
+    @warn &quot;Either $start or $end are not a number for `slice`.&quot;;
+  } @else if $start &gt; $end {
+    @warn &quot;The start index has to be lesser than or equals to the end index for `slice`.&quot;;
+  } @else if $start &lt; 1 or $end &lt; 1 {
+    @warn &quot;List indexes must be non-zero integers for `slice`.&quot;;
+  } @else if $start &gt; length($list) {
+    @warn &quot;List index is #{$start} but list is only #{length($list)} item long for `slice`.&quot;;
+  } @else if $end &gt; length($list) {
+    @warn &quot;List index is #{$end} but list is only #{length($list)} item long for `slice`.&quot;;
+  } @else {
+    $result: ();
+
+    @for $i from $start through $end {
+      $result: append($result, nth($list, $i));
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function slice($list, $glue, $is-nested) { ... }"><code>@function slice($list, $glue, $is-nested) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>convert list to a string</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$glue</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$is-nested</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-reverse"><h3 class="item__heading"><a class="item__name" href="#function-reverse">reverse</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function reverse($list, $recursive) { 
+  $result: ();
+
+  @for $i from length($list)*-1 through -1 {
+    @if type-of(nth($list, abs($i))) == list and $recursive {
+      $result: append($result, reverse(nth($list, abs($i)), $recursive));
+    } @else {
+      $result: append($result, nth($list, abs($i)));
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function reverse($list, $recursive) { ... }"><code>@function reverse($list, $recursive) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>reverses a list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$recursive</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-to-string"><h3 class="item__heading"><a class="item__name" href="#function-to-string">to-string</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function to-string($list, $glue, $is-nested) { 
+  $result: null;
+
+  @for $i from 1 through length($list) {
+    $e: nth($list, $i);
+
+    @if type-of($e) == list {
+      $result: $result#{to-string($e, $glue, true)};
+    } @else {
+      $result: if($i != length($list) or $is-nested, $result #{$e}#{$glue}, $result#{$e});
+    }
+  }
+
+  @return $result;
+ }" data-collapsed="@function to-string($list, $glue, $is-nested) { ... }"><code>@function to-string($list, $glue, $is-nested) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>convert list to a string</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$glue</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$is-nested</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table></section><section class="main__item container item" id="function-list-has-number"><h3 class="item__heading"><a class="item__name" href="#function-list-has-number">list-has-number</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function list-has-number($list) { 
+  $ret: false;
+  @if (type_of($list) == list) {
+    @each $val in $list {
+      @if type-of($val) == number {
+        $ret: true;
+      }
+    }
+  } @else {
+    @if type-of($list) == number {
+      $ret: true;
+    }
+  }
+
+  @return $ret;
+ }" data-collapsed="@function list-has-number($list) { ... }"><code>@function list-has-number($list) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>list contains a number</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$list</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Boolean</code></div></section><section class="main__item container item" id="function-map-nested-get"><h3 class="item__heading"><a class="item__name" href="#function-map-nested-get">map-nested-get</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-nested-get($map, $map-key, $key) { 
+  @if (type-of($map) != map) {
+    @return null;
+  }
+  $n-map:map-get($map,$map-key);
+  @if (type-of($n-map) != map) {
+    @return null;
+  }
+  @if not (map-has-key($n-map,$key)){
+    @return null;
+  }@else{
+    @return map-get($n-map,$key);
+  }
+ }" data-collapsed="@function map-nested-get($map, $map-key, $key) { ... }"><code>@function map-nested-get($map, $map-key, $key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>returns the key value for a two-level nested map</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$map-key</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Key</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$key</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Key</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$val:map-nested-get($map,item,background);</code></pre></div></section><section class="main__item container item" id="function-map-deep-get"><h3 class="item__heading"><a class="item__name" href="#function-map-deep-get">map-deep-get</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-deep-get($map, $keys...) { 
+  $value: $map;
+  @each $key in $keys {
+    @if $value !=null{
+      @if map-has-key($value,$key){
+        $value: map-get($value, $key);
+      }@else{
+        $value:null;
+      }
+    }
+  }
+  @return $value;
+ }" data-collapsed="@function map-deep-get($map, $keys...) { ... }"><code>@function map-deep-get($map, $keys...) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>returns the key value for an arbitrarily nested map</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$val:map-deep-get($map,item,hover,background);</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#function-map-deep-get-default"><code>map-deep-get-default</code></a></li></ul></section><section class="main__item container item" id="function-map-get-default"><h3 class="item__heading"><a class="item__name" href="#function-map-get-default">map-get-default</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-get-default($map, $key, $default-value) { 
+  @if not (map-has-key($map,$key)){
+    @return $default-value;
+  }@else{
+    @return map-get($map,$key);
+  }
+ }" data-collapsed="@function map-get-default($map, $key, $default-value) { ... }"><code>@function map-get-default($map, $key, $default-value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>return the value for the key or the default value, if no key</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$key</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Key</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$val:map-get-default($map,background,#fff);</code></pre></div></section><section class="main__item container item" id="function-map-nested-get-default"><h3 class="item__heading"><a class="item__name" href="#function-map-nested-get-default">map-nested-get-default</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-nested-get-default($map, $map-key, $key, $default-value) { 
+  @if (type-of($map) != map) {
+    @return $default-value;
+  }
+  $n-map:map-get($map,$map-key);
+  @if (type-of($n-map) != map) {
+    @return $default-value;
+  }
+  @if not (map-has-key($n-map,$key)){
+    @return $default-value;
+  }@else{
+    @return map-get($n-map,$key);
+  }
+ }" data-collapsed="@function map-nested-get-default($map, $map-key, $key, $default-value) { ... }"><code>@function map-nested-get-default($map, $map-key, $key, $default-value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>nested map: return the value for the key or the default value, if no key</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$map-key</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Key</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$key</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Key</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$val:map-nested-get-default($map,hover,background,#ddd);</code></pre></div></section><section class="main__item container item" id="function-map-deep-get-default"><h3 class="item__heading"><a class="item__name" href="#function-map-deep-get-default">map-deep-get-default</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-deep-get-default($map, $default-value, $keys...) { 
+  $v:map-deep-get($map,$keys...);
+  @if($v==null){
+    $v:$default-value;
+  }
+  @return $v;
+ }" data-collapsed="@function map-deep-get-default($map, $default-value, $keys...) { ... }"><code>@function map-deep-get-default($map, $default-value, $keys...) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>returns the key value for an arbitrarily nested map, or the default value, if no key</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline">Any type</div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$val:map-deep-get-default($map,#ddd,item,hover,background);</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-map-deep-get"><code>map-deep-get</code></a></li></ul></section><section class="main__item container item" id="function-extend"><h3 class="item__heading"><a class="item__name" href="#function-extend">extend</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function extend($map, $ext-map) { 
+  @return map-merge($map, $ext-map);
+ }" data-collapsed="@function extend($map, $ext-map) { ... }"><code>@function extend($map, $ext-map) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>alias for map-merge</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$ext-map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Map</code></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>$new-map:extend($map,$another-map);</code></pre></div></section><section class="main__item container item" id="function-map-deep-set"><h3 class="item__heading"><a class="item__name" href="#function-map-deep-set">map-deep-set</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-deep-set($map, $keys..., $value) { 
+  $map-list: ($map,);
+  $result: null;
+
+  @if length($keys) == 2 {
+    @return map-merge($map, (nth($keys, 1): nth($keys, -1)));
+  }
+
+  @for $i from 1 through length($keys) - 2 {
+    $map-list: append($map-list, map-get(nth($map-list, -1), nth($keys, $i)));
+  }
+
+  @for $i from length($map-list) through 1 {
+    $result: map-merge(nth($map-list, $i), (nth($keys, $i): if($i == length($map-list), nth($keys, -1), $result)));
+  }
+
+  @return $result;
+ }" data-collapsed="@function map-deep-set($map, $keys..., $value) { ... }"><code>@function map-deep-set($map, $keys..., $value) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Update a key deeply nested</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc"><p>Map to update</p></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc"><p>Keys to access to value to update</p></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc"><p>New value (last member of <code>$keys</code>)</p></td><td data-label="type"><code>Any</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Map</code> &mdash;<p>Updated map</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section><section class="main__item container item" id="function-map-depth"><h3 class="item__heading"><a class="item__name" href="#function-map-depth">map-depth</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-depth($map) { 
+  $level: 1;
+
+  @each $key, $value in $map {
+    @if type-of($value) == &quot;map&quot; {
+      $level: max(map-depth($value) + 1, $level);
+    }
+  }
+
+  @return $level;
+ }" data-collapsed="@function map-depth($map) { ... }"><code>@function map-depth($map) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Compute the maximum depth of a map</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code> &mdash;<p>max depth of <code>$map</code></p></div></section><section class="main__item container item" id="function-map-has-keys"><h3 class="item__heading"><a class="item__name" href="#function-map-has-keys">map-has-keys</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-has-keys($map, $keys...) { 
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+  }
+
+  @return true;
+ }" data-collapsed="@function map-has-keys($map, $keys...) { ... }"><code>@function map-has-keys($map, $keys...) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Test if map got all <code>$keys</code> at first level</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc"><p>Map</p></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc"><p>Keys to test</p></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Bool</code></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section><section class="main__item container item" id="function-map-has-nested-keys"><h3 class="item__heading"><a class="item__name" href="#function-map-has-nested-keys">map-has-nested-keys</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-has-nested-keys($map, $keys...) { 
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+ }" data-collapsed="@function map-has-nested-keys($map, $keys...) { ... }"><code>@function map-has-nested-keys($map, $keys...) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Test if map got all <code>$keys</code> nested with each others</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc"><p>Map</p></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc"><p>Keys to test</p></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Bool</code></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section><section class="main__item container item" id="function-map-zip"><h3 class="item__heading"><a class="item__name" href="#function-map-zip">map-zip</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-zip($keys, $values) { 
+  $l-keys: length($keys);
+  $l-values: length($values);
+  $min: min($l-keys, $l-values);
+  $map: ();
+
+  @if $l-keys != $l-values {
+    @warn &quot;There are #{$l-keys} key(s) for #{$l-values} value(s) in the map for `map-zip`. &quot;
+        + &quot;Resulting map will only have #{$min} pairs.&quot;;
+  }
+
+  @if $min == 0 {
+    @return $map;
+  }
+
+  @for $i from 1 through $min {
+    $map: map-merge($map, (nth($keys, $i): nth($values, $i)));
+  }
+
+  @return $map;
+ }" data-collapsed="@function map-zip($keys, $values) { ... }"><code>@function map-zip($keys, $values) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>An equivalent of <code>zip</code> function but for maps. Takes two lists, the first for keys, second for values.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$keys</code></th><td data-label="desc"><p>Keys for map</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc"><p>Values for map</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Map</code> &mdash;<p>Freshly created map</p></div></section><section class="main__item container item" id="function-map-extend"><h3 class="item__heading"><a class="item__name" href="#function-map-extend">map-extend</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function map-extend($map, $maps..., $deep) { 
+  $last: nth($maps, -1);
+  $deep: $last == true;
+  $max: if($deep, length($maps) - 1, length($maps));
+
+  // Loop through all maps in $maps...
+  @for $i from 1 through $max {
+    // Store current map
+    $current: nth($maps, $i);
+
+    // If not in deep mode, simply merge current map with map
+    @if not $deep {
+      $map: map-merge($map, $current);
+    } @else {
+      // If in deep mode, loop through all tuples in current map
+      @each $key, $value in $current {
+
+        // If value is a nested map and same key from map is a nested map as well
+        @if type-of($value) == &quot;map&quot; and type-of(map-get($map, $key)) == &quot;map&quot; {
+          // Recursive extend
+          $value: map-extend(map-get($map, $key), $value, true);
+        }
+
+        // Merge current tuple with map
+        $map: map-merge($map, ($key: $value));
+      }
+    }
+  }
+
+  @return $map;
+ }" data-collapsed="@function map-extend($map, $maps..., $deep) { ... }"><code>@function map-extend($map, $maps..., $deep) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>deep extend function About <code>map-merge()</code>:</p><ul><li>only takes 2 arguments</li><li>is not recursive</li></ul></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$map</code></th><td data-label="desc"><p>first map</p></td><td data-label="type"><code>Map</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$maps</code></th><td data-label="desc"><p>other maps</p></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$deep</code></th><td data-label="desc"><p>recursive mode</p></td><td data-label="type"><code>Bool</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Map</code></div></section><section class="main__item container item" id="function-columns-to-percentage"><h3 class="item__heading"><a class="item__name" href="#function-columns-to-percentage">columns-to-percentage</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function columns-to-percentage($columns) { 
+  $v: (1/$columns)*100;
+  $v1: $v;
+  $v2: ($v1/100)*100%;
+  @return $v2;
+ }" data-collapsed="@function columns-to-percentage($columns) { ... }"><code>@function columns-to-percentage($columns) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>converts columns to percentage</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$columns</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Int</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code></div></section><section class="main__item container item" id="function-convert-to-decimal"><h3 class="item__heading"><a class="item__name" href="#function-convert-to-decimal">convert-to-decimal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function convert-to-decimal() { 
+  $result: ($fraction*100)/100;
+  @return $result;
+ }" data-collapsed="@function convert-to-decimal() { ... }"><code>@function convert-to-decimal() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>convert fraction to decimal</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><span class="project-info__name">Sass-functions</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under MIT</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
