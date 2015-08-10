@@ -1,0 +1,33 @@
+/// Misc Functions
+
+/// converts columns to percentage
+/// @access public
+/// @param {Number} $columns
+/// @return {Number}
+@function columns-to-percentage($columns) {
+  $v: (1/$columns)*100;
+  $v1: $v;
+  $v2: ($v1/100)*100%;
+  @return $v2;
+}
+
+/// convert fraction to decimal
+/// @access public
+/// @param {Number} $fraction
+/// @return {Number}
+@function convert-to-decimal($fraction) {
+  $result: ($fraction*100)/100;
+  @return $result;
+}
+
+/// rgb from color
+/// @access public
+/// @param {*} $color
+/// @return {Color}
+@function color-rgb($color){
+  $red:red($color);
+  $green:green($color);
+  $blue:red($color);
+  @return rgb($red,$green,$blue);
+
+}
